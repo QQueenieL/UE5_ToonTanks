@@ -16,7 +16,8 @@ class TOONTANKS_API ATower : public ABasePawn
 	
 public:
 	ATower();
-
+	void HandleDestruction();
+	
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

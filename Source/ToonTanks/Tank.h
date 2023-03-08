@@ -29,6 +29,8 @@ public:
 
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	bool bAlive = true;
 	
 private:
 	UPROPERTY(VisibleAnywhere, category="Components")
@@ -46,4 +48,5 @@ private:
 	APlayerController* TankPlayerController;
 	void Move(float Value);
 	void Turn(float Value);
+
 };
